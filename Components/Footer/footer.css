@@ -1,0 +1,175 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 36%);
+    --textColor: hsl(240, 4%, 36%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    background: var(--blackColor);
+    color: var(--whiteColor);
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+  
+  .videoDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .videoDiv video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+  .secContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .contactDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .contactDiv .text small {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--greyText);
+  }
+  
+  .contactDiv .text h2 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .inputDiv {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--inputColor);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+  }
+  
+  .inputDiv input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .inputDiv input::placeholder {
+    color: var(--greyText);
+  }
+  
+  .inputDiv .btn {
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .inputDiv .btn:hover {
+    background: var(--SecondaryColor);
+  }
+  
+  .footerCard {
+    position:relative;
+    padding: 1rem 1rem 4rem;
+    gap:2rem;
+    border-radius:1rem;
+    background:var(--bodyColor);
+    width:100%;
+    justify-content:center;
+    flex-direction:column;
+    align-items:flex-start;
+    overflow:hidden;
+  }
+  
+  .footerIntro {
+    flex-basis:100%;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction: column;
+    row-gap:.5rem;
+
+
+  }
+  
+  .footerParagraph {
+    margin-top: 1rem;
+    color: black;
+  }
+  
+  .footerSocials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color:blueviolet;
+  }
+  
+  .linkGroup {
+    max-width: 200px;
+  }
+  
+  .groupTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footerList {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .footerList:hover {
+    color: black;
+  }
+
+  .footerDiv{
+    flex-direction:column;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background: var(--SecondaryColor);
+    padding:.5rem 2rem;
+
+    small{
+        font-size:10px;
+        color:var(--whiteColor);
+
+    }
+  }
+
+  

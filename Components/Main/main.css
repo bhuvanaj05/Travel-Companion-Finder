@@ -1,0 +1,184 @@
+/* Root Variables */
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 36%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --cardBG: rgb(255, 255, 235);
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--bodyColor);
+    color: var(--textColor);
+    line-height: 1.6;
+    /* padding: 20px; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Title */
+.secTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.secTitle .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--PrimaryColor);
+    position: relative;
+}
+
+.secTitle .title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--SecondaryColor);
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Single Destination Card */
+.singleDestination {
+    background: var(--cardBG);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.singleDestination:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Div */
+.imgDiv {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.imgDiv img:hover {
+    transform: scale(1.1);
+}
+
+/* Card Info */
+.cardInfo {
+    padding: 15px;
+}
+
+.destTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blackColor);
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+
+.content .icon {
+    font-size: 18px;
+    color: var(--PrimaryColor);
+    margin-right: 5px;
+}
+
+.name {
+    font-size: 1rem;
+    color: var(--textColor);
+}
+
+/* Fees and Description */
+.fees {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding:1rem;
+}
+
+.grade {
+    font-size: 1rem;
+    color: var(--textColor);
+    font-weight: bold;
+}
+
+.grade small {
+    color: var(--whiteColor);
+    text-align:center;
+    background:var(--gradientColor);
+    border-radius:1rem;
+    padding:1px 10px;
+    font-size:10px;
+
+}
+
+.price h5 {
+    font-size: 1.2rem;
+    color: var(--PrimaryColor);
+}
+
+.desc {
+    margin: 10px 0;
+    color: black;
+}
+
+/* Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: var(--SecondaryColor);
+}
+
+.btn .icon {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
